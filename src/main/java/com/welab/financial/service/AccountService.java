@@ -17,6 +17,6 @@ public interface AccountService {
 	
 	public void modifyAccount(Account account);
 	
-	public void deleteAccount(Account account);
+	public void deleteAccountById(Long accountId);
 	
 }

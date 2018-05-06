@@ -21,7 +21,7 @@ public class Account {
 	
 	private Date createTime;
 	
-	private Date description;
+	private String description;
 
 	/**
 	 * @return the accountId
@@ -96,14 +96,14 @@ public class Account {
 	/**
 	 * @return the description
 	 */
-	public Date getDescription() {
+	public String getDescription() {
 		return description;
 	}
 
 	/**
 	 * @param description the description to set
 	 */
-	public void setDescription(Date description) {
+	public void setDescription(String description) {
 		this.description = description;
 	}
 	

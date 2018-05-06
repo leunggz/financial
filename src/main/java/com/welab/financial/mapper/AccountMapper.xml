@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.welab.financial.dao" >
+<mapper namespace="com.welab.financial.dao.AccountDao" >
   <resultMap id="BaseResultMap" type="com.welab.financial.entity.Account" >
-    <id column="izwd" property="accountId" jdbcType="Long" />
+    <id column="zwid" property="accountId" jdbcType="BIGINT" />
     <result column="flname" property="detail" jdbcType="VARCHAR" />
     <result column="money" property="money" jdbcType="DOUBLE" />
     <result column="zhangHu" property="paymentTerm" jdbcType="VARCHAR" />
@@ -10,7 +10,7 @@
     <result column="description" property="description" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Base_Column_List" >
-  		izwd, flname, money, zhangHu, createtime, description
+  		zwid, flname, money, zhangHu, createtime, description
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
@@ -18,67 +18,91 @@
     from gjp_zhangwu
     where zwid = #{accountId,jdbcType=INTEGER}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
-    delete from user_t
-    where id = #{id,jdbcType=INTEGER}
-  </delete>
-  <insert id="insert" parameterType="org.ssm.dufy.entity.User" >
-    insert into user_t (id, user_name, password, 
-      age)
-    values (#{id,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
-      #{age,jdbcType=INTEGER})
+  <insert id="insert" parameterType="com.welab.financial.entity.Account" >
+    insert into gjp_zhangwu ( zwid, flname , money , zhangHu , createtime , description)
+    values (#{accountId,jdbcType=INTEGER}, #{detail,jdbcType=VARCHAR}, #{money,jdbcType=DOUBLE}, 
+      #{paymentTerm,jdbcType=VARCHAR},#{createTime,jdbcType=DATE},#{description,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="org.ssm.dufy.entity.User" >
-    insert into user_t
+  <insert id="insertSelective" parameterType="com.welab.financial.entity.Account" >
+    insert into gjp_zhangwu
     <trim prefix="(" suffix=")" suffixOverrides="," >
-      <if test="id != null" >
-        id,
+      <if test="accountId != null" >
+        zwid,
       </if>
-      <if test="userName != null" >
-        user_name,
+      <if test="detail != null" >
+        flname,
       </if>
-      <if test="password != null" >
-        password,
+      <if test="money != null" >
+        money,
       </if>
-      <if test="age != null" >
-        age,
+      <if test="paymentTerm != null" >
+        zhangHu,
       </if>
+      <if test="createTime != null" >
+        createtime,
+      </if>
+      <if test="description != null" >
+        description,
+      </if>      
     </trim>
+    
     <trim prefix="values (" suffix=")" suffixOverrides="," >
-      <if test="id != null" >
-        #{id,jdbcType=INTEGER},
+      <if test="accountId != null" >
+        #{accountId,jdbcType=INTEGER},
       </if>
-      <if test="userName != null" >
-        #{userName,jdbcType=VARCHAR},
+      <if test="detail != null" >
+        #{flname,jdbcType=VARCHAR},
       </if>
-      <if test="password != null" >
-        #{password,jdbcType=VARCHAR},
+      <if test="money != null" >
+        #{money,jdbcType=DOUBLE},
       </if>
-      <if test="age != null" >
-        #{age,jdbcType=INTEGER},
+      <if test="paymentTerm != null" >
+        #{paymentTerm,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null" >
+        #{createtime,jdbcType=DATE},
+      </if>
+      <if test="description != null" >
+        #{description,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="org.ssm.dufy.entity.User" >
-    update user_t
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from gjp_zhangwu
+    where zwid = #{accountId,jdbcType=INTEGER}
+  </delete>
+  <update id="updateByPrimaryKeySelective" parameterType="com.welab.financial.entity.Account" >
+    update gjp_zhangwu
     <set >
-      <if test="userName != null" >
-        user_name = #{userName,jdbcType=VARCHAR},
+      <if test="accountId != null" >
+       zwid = #{accountId,jdbcType=INTEGER},
       </if>
-      <if test="password != null" >
-        password = #{password,jdbcType=VARCHAR},
+      <if test="detail != null" >
+        flname = #{detail,jdbcType=VARCHAR},
       </if>
-      <if test="age != null" >
-        age = #{age,jdbcType=INTEGER},
+      <if test="money != null" >
+        money = #{money,jdbcType=DOUBLE},
+      </if>
+      <if test="paymentTerm != null" >
+       zhangHu = #{paymentTerm,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null" >
+       createtime = #{createTime,jdbcType=DATE},
+      </if>
+      <if test="description != null" >
+       description = #{description,jdbcType=VARCHAR},
       </if>
     </set>
-    where id = #{id,jdbcType=INTEGER}
+    where zwid = #{accountId,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="org.ssm.dufy.entity.User" >
-    update user_t
-    set user_name = #{userName,jdbcType=VARCHAR},
-      password = #{password,jdbcType=VARCHAR},
-      age = #{age,jdbcType=INTEGER}
-    where id = #{id,jdbcType=INTEGER}
+  <update id="updateByPrimaryKey" parameterType="com.welab.financial.entity.Account" >
+    update gjp_zhangwu
+    set zwid = #{accountId,jdbcType=VARCHAR},
+      flname = #{detail,jdbcType=VARCHAR},
+      money = #{money,jdbcType=DOUBLE},
+      zhangHu = #{paymentTerm,jdbcType=VARCHAR},
+      createtime = #{createtime,jdbcType=DATE},
+      description = #{description,jdbcType=VARCHAR},
+    where zwid = #{accountId,jdbcType=INTEGER}
   </update>
 </mapper>

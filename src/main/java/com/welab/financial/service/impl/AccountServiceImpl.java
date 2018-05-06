@@ -18,7 +18,7 @@ import com.welab.financial.service.AccountService;
 public class AccountServiceImpl implements AccountService {
 
 	@Autowired
-	private AccountDao accountDao;
+	public AccountDao accountDao;
 
 	public Account getAccountById(Long accountId) {		
 		return accountDao.selectByPrimaryKey(accountId);
@@ -26,19 +26,17 @@ public class AccountServiceImpl implements AccountService {
 
 	
 	public void addAccount(Account account) {
-		
-
+		 accountDao.insert(account);
 	}
-
 	
 	public void modifyAccount(Account account) {
-		
+		accountDao.updateByPrimaryKeySelective(account);
 
 	}
 
 
-	public void deleteAccount(Account account) {
-		// TODO Auto-generated method stub
+	public void deleteAccountById(Long id) {
+		accountDao.deleteByPrimaryKey(id);
 
 	}
 

@@ -1,0 +1,60 @@
+2018-05-02 00:05:26 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]-[INFO] Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-05-02 00:05:27 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]-[INFO] Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-05-02 00:05:27 [org.springframework.context.support.GenericApplicationContext]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@153f5a29: startup date [Wed May 02 00:05:27 CST 2018]; root of context hierarchy
+2018-05-02 00:05:27 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-02 00:05:28 [com.alibaba.druid.pool.DruidDataSource]-[INFO] {dataSource-1} inited
+2018-05-02 00:05:28 [org.springframework.context.support.GenericApplicationContext]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@153f5a29: startup date [Wed May 02 00:05:27 CST 2018]; root of context hierarchy
+2018-05-02 00:05:28 [com.alibaba.druid.pool.DruidDataSource]-[INFO] {dataSource-1} closed
+2018-05-02 22:22:49 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]-[INFO] Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-05-02 22:22:50 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]-[INFO] Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-05-02 22:22:50 [org.springframework.context.support.GenericApplicationContext]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@153f5a29: startup date [Wed May 02 22:22:50 CST 2018]; root of context hierarchy
+2018-05-02 22:22:50 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-02 22:22:51 [com.alibaba.druid.pool.DruidDataSource]-[INFO] {dataSource-1} inited
+2018-05-02 22:22:52 [org.springframework.context.support.GenericApplicationContext]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@153f5a29: startup date [Wed May 02 22:22:50 CST 2018]; root of context hierarchy
+2018-05-02 22:22:52 [com.alibaba.druid.pool.DruidDataSource]-[INFO] {dataSource-1} closed
+2018-05-02 23:29:08 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]-[INFO] Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-05-02 23:29:09 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]-[INFO] Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-05-02 23:29:09 [org.springframework.context.support.GenericApplicationContext]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@153f5a29: startup date [Wed May 02 23:29:09 CST 2018]; root of context hierarchy
+2018-05-02 23:29:09 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-02 23:29:10 [com.alibaba.druid.pool.DruidDataSource]-[INFO] {dataSource-1} inited
+2018-05-02 23:29:10 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]-[INFO] Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-05-02 23:29:10 [org.springframework.jdbc.support.SQLErrorCodesFactory]-[INFO] SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2018-05-02 23:29:10 [org.springframework.context.support.GenericApplicationContext]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@153f5a29: startup date [Wed May 02 23:29:09 CST 2018]; root of context hierarchy
+2018-05-02 23:29:10 [com.alibaba.druid.pool.DruidDataSource]-[INFO] {dataSource-1} closed
+2018-05-02 23:33:03 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]-[INFO] Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-05-02 23:33:03 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]-[INFO] Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-05-02 23:33:03 [org.springframework.context.support.GenericApplicationContext]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@153f5a29: startup date [Wed May 02 23:33:03 CST 2018]; root of context hierarchy
+2018-05-02 23:33:03 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-02 23:33:05 [com.alibaba.druid.pool.DruidDataSource]-[INFO] {dataSource-1} inited
+2018-05-02 23:33:05 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]-[INFO] Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-05-02 23:33:05 [org.springframework.jdbc.support.SQLErrorCodesFactory]-[INFO] SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2018-05-02 23:33:05 [org.springframework.context.support.GenericApplicationContext]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@153f5a29: startup date [Wed May 02 23:33:03 CST 2018]; root of context hierarchy
+2018-05-02 23:33:05 [com.alibaba.druid.pool.DruidDataSource]-[INFO] {dataSource-1} closed
+2018-05-02 23:33:36 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]-[INFO] Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-05-02 23:33:36 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]-[INFO] Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-05-02 23:33:36 [org.springframework.context.support.GenericApplicationContext]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@153f5a29: startup date [Wed May 02 23:33:36 CST 2018]; root of context hierarchy
+2018-05-02 23:33:36 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-02 23:33:37 [com.alibaba.druid.pool.DruidDataSource]-[INFO] {dataSource-1} inited
+2018-05-02 23:33:38 [org.springframework.context.support.GenericApplicationContext]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@153f5a29: startup date [Wed May 02 23:33:36 CST 2018]; root of context hierarchy
+2018-05-02 23:33:38 [com.alibaba.druid.pool.DruidDataSource]-[INFO] {dataSource-1} closed
+2018-05-02 23:34:09 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]-[INFO] Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-05-02 23:34:10 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]-[INFO] Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-05-02 23:34:10 [org.springframework.context.support.GenericApplicationContext]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@153f5a29: startup date [Wed May 02 23:34:10 CST 2018]; root of context hierarchy
+2018-05-02 23:34:10 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-02 23:34:11 [com.alibaba.druid.pool.DruidDataSource]-[INFO] {dataSource-1} inited
+2018-05-02 23:34:11 [org.springframework.context.support.GenericApplicationContext]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@153f5a29: startup date [Wed May 02 23:34:10 CST 2018]; root of context hierarchy
+2018-05-02 23:34:11 [com.alibaba.druid.pool.DruidDataSource]-[INFO] {dataSource-1} closed
+2018-05-02 23:35:17 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]-[INFO] Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-05-02 23:35:17 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]-[INFO] Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-05-02 23:35:17 [org.springframework.context.support.GenericApplicationContext]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@153f5a29: startup date [Wed May 02 23:35:17 CST 2018]; root of context hierarchy
+2018-05-02 23:35:18 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-02 23:35:19 [com.alibaba.druid.pool.DruidDataSource]-[INFO] {dataSource-1} inited
+2018-05-02 23:35:19 [org.springframework.context.support.GenericApplicationContext]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@153f5a29: startup date [Wed May 02 23:35:17 CST 2018]; root of context hierarchy
+2018-05-02 23:35:19 [com.alibaba.druid.pool.DruidDataSource]-[INFO] {dataSource-1} closed
+2018-05-02 23:52:31 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]-[INFO] Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-05-02 23:52:31 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]-[INFO] Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-05-02 23:52:31 [org.springframework.context.support.GenericApplicationContext]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@153f5a29: startup date [Wed May 02 23:52:31 CST 2018]; root of context hierarchy
+2018-05-02 23:52:31 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-02 23:52:32 [com.alibaba.druid.pool.DruidDataSource]-[INFO] {dataSource-1} inited
+2018-05-02 23:52:33 [org.springframework.context.support.GenericApplicationContext]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@153f5a29: startup date [Wed May 02 23:52:31 CST 2018]; root of context hierarchy
+2018-05-02 23:52:33 [com.alibaba.druid.pool.DruidDataSource]-[INFO] {dataSource-1} closed
